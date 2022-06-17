@@ -1,5 +1,6 @@
 /*Глобальные стили*/
 body {
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -25,15 +26,42 @@ a {
     margin: 0 auto;
 }
 
+.title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #FD470E;
+    border-radius: 4px;
+    padding: 14px 35px;
+}
+
+.btn:hover {
+    background-color: #e03703;
+}
+
 .header {
     width: 100%;
+    position: relative;
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .nav-link {
@@ -41,6 +69,7 @@ a {
     margin: 0 35px;
     padding-bottom: 5px;
     color: #000;
+    font-size: 16px;
     font-weight: 700;
     position: relative;
 }
@@ -60,4 +89,63 @@ a {
 
 .nav-link:hover::after {
    height: 3px;
+}
+
+.intro {
+    position: relative;
+}
+
+.intro__content {
+    padding: 150px 0 100px 0;
+    width: 600px;
+}
+
+.intro-title {
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.intro-subtitle {
+    max-width: 380px;
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.intro__slider-dots {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    margin-bottom: 50px;
+}
+
+.intro__slider {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.intro__slider-img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro__btn-prev {
+    cursor: pointer;
+    position: absolute;
+    right: 70px;
+    bottom: 5px;
+    z-index: 1;
+}
+.intro__btn-next {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
 }
