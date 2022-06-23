@@ -1,5 +1,4 @@
-            /*Глобальные стили*/
-            
+
             body {
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
@@ -18,7 +17,6 @@
             a {
                 text-decoration: none;
             }
-            /* Стили */
             
             .container {
                 width: 100%;
@@ -44,6 +42,10 @@
                 padding: 14px 35px;
             }
             
+            .btn a {
+                color: #fff;
+            }
+
             .btn:hover {
                 background-color: #e03703;
             }
@@ -208,7 +210,6 @@
                 background: url(../img/working.png) no-repeat center center;
                 background-size: cover;
                 color: #fff;
-                background-attachment: scroll;
             }
             
             .working__overlay {
@@ -252,11 +253,17 @@
                 
             }
 
+            .menu__item a {
+                color: #000;
+                
+            }
+            
             .menu__items {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 24px;
             }
+
             .item {
                 background: #FFFFFF;
                 border-radius: 4px;
@@ -277,6 +284,42 @@
 
             .popular__container h2 {
                 margin-bottom: 40px;
+            }
+
+            .streetfood_container {
+                margin-bottom: 24px;
+            }
+
+            .streetfood_container h2 {
+                margin-bottom: 40px;
+                margin-top: 24px;
+            }
+
+            .snack__container {
+                margin-bottom: 24px;
+            }
+
+            .snack__container h2 {
+                margin-bottom: 40px;
+                margin-top: 24px;
+            }
+
+            .drinks_container {
+                margin-bottom: 24px;
+            }
+
+            .drinks__container h2 {
+                margin-bottom: 40px;
+                margin-top: 24px;
+            }
+
+            .sause_container {
+                margin-bottom: 24px;
+            }
+
+            .sause_container h2 {
+                margin-bottom: 40px;
+                margin-top: 24px;
             }
 
             .item__weight {
@@ -324,10 +367,10 @@
                 background: #FCE000;
                 border-radius: 24px;
                 margin-top: 50px;
+                width: 360px;
                 height: 280px;
                 padding: 40px 32px;
                 text-align: center;
-                min-width: 320px;
 
             }
 

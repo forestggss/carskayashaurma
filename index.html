@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <button class="btn" type="button">
-                        Перейти к меню
+                        <a href="#menu">Перейти к меню</a>
                     </button>
                 </div>
                 <div class="intro__slider">
@@ -111,20 +111,31 @@
                 </div>
             </div>
         </div>
-        <div class="menu">
+        <div id="menu" class="menu">
             <div class="container menu__container">
                 <div class="menu__left">
                     <ul class="menu__cats">
-                        <li class="menu__item">Популярные блюда</li>
-                        <li class="menu__item">Стритфуд</li>
-                        <li class="menu__item">Закуски</li>
-                        <li class="menu__item">Напитки</li>
-                        <li class="menu__item">Соусы</li>
+                        <li class="menu__item">
+                            <a href="#popular">Популярные блюда</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#streetfood">Стритфуд</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#snacks">Закуски</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#drinks">Напитки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#sause">Соусы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#yandex">Заказать доставку</a>
                         </li>
                     </ul>
-                
                 <div class="popular__container">
-                    <h2>Популярные блюда</h2>
+                    <h2 id="popular">Популярные блюда</h2>
                     <div class="menu__items">
                         <article class="item">
                             <div class="item__header">
@@ -180,8 +191,12 @@
                             </div>
                             <p>Лаваш, капуста, морковка по-корейски, огурец, помидор, лук, соус чесночный, соус томатный, сосиски (2 шт.)</p>
                             <img src="img/hotdog.jpeg" alt="">
-                        </article>  
-                        <h2>Стритфуд</h2>
+                        </article> 
+                    </div>
+                </div>
+                <div class="streetfood_container">
+                        <h2 id="streetfood">Стритфуд</h2>
+                        <div class="menu__items">
                         <article class="item">
                             <div class="item__header">
                                 <div>
@@ -270,7 +285,11 @@
                             <p>Тортилья со вкусом сыра, капуста, морковка по- корейски, огурец, помидор, лук, соус чесночный, соус томатный, курица</p>
                             <img src="img/tortilia.jpeg" alt="">
                         </article>
-                        <h2>Закуски</h2>
+                    </div>
+                </div>
+                <div class="snack__container">
+                        <h2 id="snacks">Закуски</h2>
+                        <div class="menu__items">
                         <article class="item">
                             <div class="item__header">
                                 <div>
@@ -283,72 +302,77 @@
                         </article><article class="item">
                             <div class="item__header">
                                 <div>
-                                <h3>Наггетсы</h3>
-                                <span class="item__weight">120 г</span>
-                                </div>
+                                    <h3>Наггетсы</h3>
+                                     <span class="item__weight">120 г</span>
+                                    </div>
                                 <span class="item__price">160 ₽</span>
                             </div>
                             <p>(6 шт.)</p>
                             <img src="img/naggets.jpeg" alt="">
                         </article>
-                        <h2>Напитки</h2>
-                    </article><article class="item">
+                        </div>
+                </div>
+                <div class="drinks_container">
+                    <h2 id="drinks">Напитки</h2>
+                    <div class="menu__items">
+                        <article class="item">
                         <div class="item__header">
                             <div>
                             <h3>Coca-cola</h3>
-                            <span class="item__weight">500 мл</span>
+                                <span class="item__weight">500 мл</span>
                             </div>
-                            <span class="item__price">120 ₽</span>
+                                <span class="item__price">120 ₽</span>
                         </div>
                         <img src="img/coca-cola1.jpeg" alt="">
                     </article>
-                </article><article class="item">
-                    <div class="item__header">
-                        <div>
+                    <article class="item">
+                        <div class="item__header">
+                            <div>
                         <h3>Coca-cola</h3>
                         <span class="item__weight">330 мл</span>
-                        </div>
+                            </div>
                         <span class="item__price">100 ₽</span>
-                    </div>
-                    <p>(6 шт.)</p>
+                        </div>
                     <img src="img/coca-cola2.jpeg" alt="">
-                </article>
-            </article>
-            <h2>Соусы</h2>
-            <article class="item">
-                <div class="item__header">
-                    <div>
-                    <h3>Сырный соус Heinz</h3>
-                    <span class="item__weight">25 г</span>
-                    </div>
-                    <span class="item__price">30 ₽</span>
-                </div>
-                <img src="img/cheese.jpeg" alt="">
-            </article>
-        </article><article class="item">
-            <div class="item__header">
-                <div>
-                <h3>Кисло-сладкий соус Heinz</h3>
-                <span class="item__weight">25 г</span>
-                </div>
-                <span class="item__price">30 ₽</span>
-            </div>
-            <img src="img/red.jpeg" alt="">
-        </article>
-    </article><article class="item">
-        <div class="item__header">
-            <div>
-            <h3>Карри соус Heinz</h3>
-            <span class="item__weight">25 г</span>
-            </div>
-            <span class="item__price">30 ₽</span>
-        </div>
-        <img src="img/karri.jpeg" alt="">
-    </article>
+                    </article>
                     </div>
                 </div>
+                <div class="sause_container">
+                    <h2 id="sause">Соусы</h2>
+                    <div class="menu__items">
+                    <article class="item">
+                        <div class="item__header">
+                           <div>
+                            <h3>Сырный соус Heinz</h3>
+                            <span class="item__weight">25 г</span>
+                            </div>
+                            <span class="item__price">30 ₽</span>
+                        </div>
+                        <img src="img/cheese.jpeg" alt="">
+                    </article>
+                    <article class="item">
+                        <div class="item__header">
+                            <div>
+                            <h3>Кисло-сладкий соус Heinz</h3>
+                            <span class="item__weight">25 г</span>
+                            </div>
+                            <span class="item__price">30 ₽</span>
+                        </div>
+                        <img src="img/red.jpeg" alt="">
+                    </article>
+                    <article class="item">
+                      <div class="item__header">
+                            <div>
+                            <h3>Карри соус Heinz</h3>
+                            <span class="item__weight">25 г</span>
+                            </div>
+                            <span class="item__price">30 ₽</span>
+                        </div>
+                        <img src="img/karri.jpeg" alt="">
+                    </article>
+                    </div>
                 </div>
-                <div class="yandex">
+                <div id="yandex" class="yandex">
                     <img src="img/yandex.svg" alt="">
                     <h2>Закажите доставку на дом</h2>
                     <button class="btn__order" type="button">
