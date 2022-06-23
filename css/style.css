@@ -177,6 +177,10 @@
                 align-items: center;
                 justify-content: flex-end;
                 background-repeat: no-repeat;
+                width: 600px;
+                height: 790px;
+                padding: 20px;
+                }
             }
 
             .about__content {
