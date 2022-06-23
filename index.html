@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="libs/slick/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -380,37 +387,44 @@
                     <img src="img/yandex.svg" alt="">
                     <h2>Закажите доставку на дом</h2>
                     <button class="btn__order" type="button">
-                        <a class="btn__order-yandex "href="https://eda.yandex.ru/rostov-on-don/r/carskaya_shaurma" target="_blank">Перейти к меню</a>
+                        <a class="btn__order-yandex" href="https://eda.yandex.ru/rostov-on-don/r/carskaya_shaurma" target="_blank">Перейти к меню</a>
                     </button>
                 </div>
             </div>
         </div>
-        <section class="reviews" style="background-image: url(img/reviews.jpg);">
+        <section class="reviews" id="reviews" style="background-image: url(img/reviews.jpg)">
             <div class="container">
-                <h2>Что говорят
-                    клиенты о нас</h2>
-                    <div class="reviews__slider">
-                        <div class="reviews__slider_slide">
-                            <div class="reviews__name">
-                                Андрей Сергеев
-                            </div>
-                            <div class="reviews__text">
-                                Оооочень вкусная шаурма и особенно гамбургер рекомендую. Всегда здесь кушаю теперь. Персонал всегда приветлив, чисто и уютно. Можно даже заказать доставку.
-                            </div>
-                        </div>
-                        <div class="reviews__slider_slide">
-                            <div class="reviews__name">
-                                Костя Стажёр
-                            </div>
-                            <div class="reviews__text">
-                                Как шаурминый амбасадор, заявляю ,что шаурма в данном заведении на очень хорошем уровне,пробовал пока только куриную, но в следующий раз попробую свининую, пока в ростове она точно на высоком уровне. Внутри чисто, персонал приветлив,хорошая вытяжка, посторонних запахов нет ) одной шаурмой можно объесться )всё культурно , как в лучших домах Лондона)
-                            </div>
-                        </div>
-                    </div>
+              <h2 class="title">Что говорят клиенты о нас</h2>
+              <div class="reviews__slider">
+                <div class="review__slider-slide">
+                  <div class="review__slider-name">
+                    Андрей Сергеев
+                  
+                  </div>
+                  <p class="review__text">
+                    Оооочень вкусная шаурма и особенно гамбургер рекомендую. Всегда
+                    здесь кушаю теперь. Персонал всегда приветлив, чисто и уютно.
+                    Можно даже заказать доставку.
+                  </p>
+                </div>
+                <div class="review__slider-slide">
+                  <div class="review__slider-name">
+                   Костя Стажёр
+                  </div>
+                  <p class="review__text">
+                    Как шаурминый амбасадор, заявляю ,что шаурма в данном заведении на
+                    очень хорошем уровне,пробовал пока только куриную, но в следующий
+                    раз попробую свининую, пока в ростове она точно на высоком уровне.
+                    Внутри чисто, персонал приветлив,хорошая вытяжка, посторонних
+                    запахов нет ) одной шаурмой можно объесться )всё культурно , как в
+                    лучших домах Лондона)
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="form__contact">
           <h2 class="title">Контакты</h2>
           <a  href="tel:+79885355771" class=" a form__contact-number">
