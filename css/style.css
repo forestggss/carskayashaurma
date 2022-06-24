@@ -47,6 +47,7 @@ a {
 
 .btn:hover {
     background-color: #e03703;
+    
 }
 
 .btn-reset {
@@ -65,7 +66,7 @@ a {
 
 .header {
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     z-index: 10;
 }
 
