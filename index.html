@@ -1,452 +1,525 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Царская шаурма</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <!-- 32×32 -->
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+  
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="libs/slick/slick.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="icon" href="img/favicon/favicon.ico">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container header__container">
-            <a href="#start" class="header__logо">
-                <img id="start" src="img/Carskyaya Shaurma.svg" alt="Логотип Царской шаурмы" />
-            </a>
-            <nav class="nav">
-                <a class="nav-link" href="#menu">
-            Меню
-            </a>
-                <a class="nav-link" href="#reviews">
-            Отзывы
-            </a>
-                <a class="nav-link" href="#contacts">
-            Контакты
-            </a>
-            </nav>
-        </div>
+      <div class="container header__container">
+        <a href="#" class="header__logо">
+          <img src="img/Carskyaya Shaurma.svg" alt="Логотип Царской шаурмы" />
+        </a>
+        <nav class="nav">
+          <a class="nav-link" href="#menu"> Меню </a>
+          <a class="nav-link" href="#reviews"> Отзывы </a>
+          <a class="nav-link" href="#contacts"> Контакты </a>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="intro">
-            <div class="container intro__container">
-                <div class="intro__content">
-                    <h1 class="title intro-title">Доставка еды Царская шаурма</h1>
-                    <div class="intro-subtitle">
-                        Я буду с тобой, ты будешь со мной и мы вместе пойдем за двойной шаурмой!
-                    </div>
-                    <div class="intro__slider-dots">
-                        <div class="intro__slider-dot">
-                            <img src="img/dot1.png" alt="Гамбургер">
-                            <div class="dot-name">Гамбургер</div>
-                        </div>
-                        <div class="intro__slider-dot">
-                            <img src="img/dot2.png" alt="Шаурма">
-                            <div class="dot-name">Шаурма</div>
-                        </div>
-                        <div class="intro__slider-dot">
-                            <img src="img/dot3.png" alt="Фахитос">
-                            <div class="dot-name">Фахитос</div>
-                        </div>
-                    </div>
-                    <button class="btn" type="button">
-                        <a href="#menu">Перейти к меню</a>
-                    </button>
-                </div>
-                <div class="intro__slider">
-                    <div class="intro__slider-img" style="background-image: url(img/intro_slider1.jpg);"></div>
-                    <div class="intro__slider-img" style="background-image: url(img/intro_slider2.jpg);"></div>
-                    <div class="intro__slider-img" style="background-image: url(img/intro_slider3.jpg);"></div>
-                </div>
+      <section class="intro">
+        <div class="container intro__container">
+          <div class="intro__content">
+            <h1 class="title intro-title">Доставка еды Царская шаурма</h1>
+            <div class="intro-subtitle">
+              Я буду с тобой, ты будешь со мной и мы вместе пойдем за двойной
+              шаурмой!
             </div>
-        </section>
-        <section class="about">
-            <div class="container about__container">
-                <div class="container about__container">
-                    <div class="about__video">
-                        <video class="about__video" poster="img/photo-video.jpg" id="video" src="video/video.mov" controls></video>
-                    </div>
-                <!-- <div class="about__video" style="background-image: url(img/photo-video.jpg)">
-                    <button class="btn-reset btn-play">
-                        <img src="img/btn-play.svg" alt="">
-                    </button>
-                </div> -->
-                <div class="about__content">
-                    <h2 class="title">Посмотри как мы готовим</h2>
-                    <div class="about-text">
-                        <p>Курица и говядина – основной ингредиент блюда, а покупаем мы мясо только у проверенных и сертифицированных поставщиков.</p>
-                        <p>Свежее и качественное мясо наши повара готовят по особой технологии, чтобы вы чувствовали вкус и аромат настоящей шаурмы. Никогда мы не готовим шаурму из мяса, которое осталось на второй день.</p>
-                        <p>Хрустящие овощи и зелень – отличные составляющие вкусной и правильной шаурмы. Ароматные и сочные, они формируют сбалансированный вкус продукта, а также являются прекрасным поставщиком витаминов для нашего организма.</p>
-                    </div>
-                        <h3 class="about__popular-title">Самые популярные блюда</h3>
-                    <div class="popular">
-                        <figure>
-                            <img src="img/popular1.jpg" alt="">
-                            <figcaption>
-                                Шаурма большая куриная
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/popular2.jpg" alt="">
-                            <figcaption>
-                                Гамбургер куриный
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/popular3.jpg" alt="">
-                            <figcaption>
-                                Фахитос куриный в лаваше
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-        </section>
-        <div class="working">
-            <div class="working__overlay">
-                <div class="container working__container">
-                    <span>Яндекс.Еда</span>
-                    <h2>Мы работаем</h2>
-                    <span>Delivery Club</span>
-                </div>
-            </div>
-        </div>
-        <div id="menu" class="menu">
-            <div class="container menu__container">
-                <div class="menu__left">
-                    <ul class="menu__cats">
-                        <li class="menu__item">
-                            <a href="#popular">Популярные блюда</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#streetfood">Стритфуд</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#snacks">Закуски</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#drinks">Напитки</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#sause">Соусы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#yandex">Заказать доставку</a>
-                        </li>
-                    </ul>
-                <div class="popular__container">
-                    <h2 id="popular">Популярные блюда</h2>
-                    <div class="menu__items">
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Шаурма большая куриная</h3>
-                                <span class="item__weight">500 г</span>
-                                </div>
-                                <span class="item__price">280 ₽</span>
-                            </div>
-                            <p>Лаваш, капуста, морковка по-корейски, огурец, помидор, лук, соус чесночный, соус томатный, курица</p>
-                            <img src="img/shaurma.jpg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Картофель фри</h3>
-                                <span class="item__weight">125 г</span>
-                                </div>
-                                <span class="item__price">140 ₽</span>
-                            </div>
-                            <p></p>
-                            <img src="img/fri.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Шаурма маленькая куриная</h3>
-                                <span class="item__weight">300 г</span>
-                                </div>
-                                <span class="item__price">240 ₽</span>
-                            </div>
-                            <p>Лаваш, капуста, морковка по-корейски, огурец, помидор, лук, соус чесночный, соус томатный, курица</p>
-                            <img src="img/lowshaurma.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Фахитос куриный в булке</h3>
-                                <span class="item__weight">400 г</span>
-                                </div>
-                                <span class="item__price">300 ₽</span>
-                            </div>
-                            <p>Булочка с кунжутом, маслины, оливки, кукуруза, курица, чесночный соус</p>
-                            <img src="img/faxitos.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Хот-дог в лаваше Xxl</h3>
-                                <span class="item__weight">400 г</span>
-                                </div>
-                                <span class="item__price">170 ₽</span>
-                            </div>
-                            <p>Лаваш, капуста, морковка по-корейски, огурец, помидор, лук, соус чесночный, соус томатный, сосиски (2 шт.)</p>
-                            <img src="img/hotdog.jpeg" alt="">
-                        </article> 
-                    </div>
-                </div>
-                <div class="streetfood_container">
-                        <h2 id="streetfood">Стритфуд</h2>
-                        <div class="menu__items">
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Шаурма большая куриная</h3>
-                                <span class="item__weight">500 г</span>
-                                </div>
-                                <span class="item__price">280 ₽</span>
-                            </div>
-                            <p>Лаваш, капуста, морковка по-корейски, огурец, помидор, лук, соус чесночный, соус томатный, курица</p>
-                            <img src="img/shaurma.jpg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Шаурма маленькая куриная</h3>
-                                <span class="item__weight">500 г</span>
-                                </div>
-                                <span class="item__price">280 ₽</span>
-                            </div>
-                            <p>Лаваш, капуста, морковка по-корейски, огурец, помидор, лук, соус чесночный, соус томатный, курица</p>
-                            <img src="img/lowshaurma.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Хот-дог в лаваше Xxl</h3>
-                                <span class="item__weight">400 г</span>
-                                </div>
-                                <span class="item__price">170 ₽</span>
-                            </div>
-                            <p>Лаваш, капуста, морковка по-корейски, огурец, помидор, лук, соус чесночный, соус томатный, сосиски (2 шт.)</p>
-                            <img src="img/hotdog.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Гамбургер свиной</h3>
-                                <span class="item__weight">500 г</span>
-                                </div>
-                                <span class="item__price">300 ₽</span>
-                            </div>
-                            <p>Булочка с кунжутом, помидор, солёный огурец, лук, лист салата, свиная котлета, чесночный соус, томатный соус</p>
-                            <img src="img/hamburger.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Фахитос куриная в лаваше</h3>
-                                <span class="item__weight">500 г</span>
-                                </div>
-                                <span class="item__price">280 ₽</span>
-                            </div>
-                            <p>Лаваш, маслины, оливки, кукуруза, курица, чесночный соус</p>
-                            <img src="img/faxitosvlavashe.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Фахитос куриный в булке</h3>
-                                <span class="item__weight">400 г</span>
-                                </div>
-                                <span class="item__price">300 ₽</span>
-                            </div>
-                            <p>Булочка с кунжутом, маслины, оливки, кукуруза, курица, чесночный соус</p>
-                            <img src="img/faxitos.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Гиро</h3>
-                                <span class="item__weight">450 г</span>
-                                </div>
-                                <span class="item__price">280 ₽</span>
-                            </div>
-                            <p>Пита, помидор, чесночный соус, курица</p>
-                            <img src="img/giro.jpeg" alt="">
-                        </article>
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Шаурма в тортилье куриная</h3>
-                                <span class="item__weight">400 г</span>
-                                </div>
-                                <span class="item__price">280 ₽</span>
-                            </div>
-                            <p>Тортилья со вкусом сыра, капуста, морковка по- корейски, огурец, помидор, лук, соус чесночный, соус томатный, курица</p>
-                            <img src="img/tortilia.jpeg" alt="">
-                        </article>
-                    </div>
-                </div>
-                <div class="snack__container">
-                        <h2 id="snacks">Закуски</h2>
-                        <div class="menu__items">
-                        <article class="item">
-                            <div class="item__header">
-                                <div>
-                                <h3>Картофель фри</h3>
-                                <span class="item__weight">125 г</span>
-                                </div>
-                                <span class="item__price">140 ₽</span>
-                            </div>
-                            <img src="img/fri.jpeg" alt="">
-                        </article><article class="item">
-                            <div class="item__header">
-                                <div>
-                                    <h3>Наггетсы</h3>
-                                     <span class="item__weight">120 г</span>
-                                    </div>
-                                <span class="item__price">160 ₽</span>
-                            </div>
-                            <p>(6 шт.)</p>
-                            <img src="img/naggets.jpeg" alt="">
-                        </article>
-                        </div>
-                </div>
-                <div class="drinks_container">
-                    <h2 id="drinks">Напитки</h2>
-                    <div class="menu__items">
-                        <article class="item">
-                        <div class="item__header">
-                            <div>
-                            <h3>Coca-cola</h3>
-                                <span class="item__weight">500 мл</span>
-                            </div>
-                                <span class="item__price">120 ₽</span>
-                        </div>
-                        <img src="img/coca-cola1.jpeg" alt="">
-                    </article>
-                    <article class="item">
-                        <div class="item__header">
-                            <div>
-                        <h3>Coca-cola</h3>
-                        <span class="item__weight">330 мл</span>
-                            </div>
-                        <span class="item__price">100 ₽</span>
-                        </div>
-                    <img src="img/coca-cola2.jpeg" alt="">
-                    </article>
-                    </div>
-                </div>
-                <div class="sause_container">
-                    <h2 id="sause">Соусы</h2>
-                    <div class="menu__items">
-                    <article class="item">
-                        <div class="item__header">
-                           <div>
-                            <h3>Сырный соус Heinz</h3>
-                            <span class="item__weight">25 г</span>
-                            </div>
-                            <span class="item__price">30 ₽</span>
-                        </div>
-                        <img src="img/cheese.jpeg" alt="">
-                    </article>
-                    <article class="item">
-                        <div class="item__header">
-                            <div>
-                            <h3>Кисло-сладкий соус Heinz</h3>
-                            <span class="item__weight">25 г</span>
-                            </div>
-                            <span class="item__price">30 ₽</span>
-                        </div>
-                        <img src="img/red.jpeg" alt="">
-                    </article>
-                    <article class="item">
-                      <div class="item__header">
-                            <div>
-                            <h3>Карри соус Heinz</h3>
-                            <span class="item__weight">25 г</span>
-                            </div>
-                            <span class="item__price">30 ₽</span>
-                        </div>
-                        <img src="img/karri.jpeg" alt="">
-                    </article>
-                    </div>
-                </div>
-                <div id="yandex" class="yandex">
-                    <img src="img/yandex.svg" alt="">
-                    <h2>Закажите доставку на дом</h2>
-                    <button class="btn__order" type="button">
-                        <a class="btn__order-yandex" href="https://eda.yandex.ru/rostov-on-don/r/carskaya_shaurma" target="_blank">Перейти к меню</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <section class="reviews" id="reviews" style="background-image: url(img/reviews.jpg)">
-            <div class="container">
-              <h2 class="title">Что говорят клиенты о нас</h2>
-              <div class="reviews__slider">
-                <div class="review__slider-slide">
-                  <div class="review__slider-name">
-                    Андрей Сергеев
-                  
-                  </div>
-                  <p class="review__text">
-                    Оооочень вкусная шаурма и особенно гамбургер рекомендую. Всегда
-                    здесь кушаю теперь. Персонал всегда приветлив, чисто и уютно.
-                    Можно даже заказать доставку.
-                  </p>
-                </div>
-                <div class="review__slider-slide">
-                  <div class="review__slider-name">
-                   Костя Стажёр
-                  </div>
-                  <p class="review__text">
-                    Как шаурминый амбасадор, заявляю ,что шаурма в данном заведении на
-                    очень хорошем уровне,пробовал пока только куриную, но в следующий
-                    раз попробую свининую, пока в ростове она точно на высоком уровне.
-                    Внутри чисто, персонал приветлив,хорошая вытяжка, посторонних
-                    запахов нет ) одной шаурмой можно объесться )всё культурно , как в
-                    лучших домах Лондона)
-                  </p>
-                </div>
+            <div class="intro__slider-dots">
+              <div class="intro__slider-dot">
+                <img src="img/dot1.png" alt="Гамбургер" />
+                <div class="dot-name">Гамбургер</div>
+              </div>
+              <div class="intro__slider-dot">
+                <img src="img/dot2.png" alt="Шаурма" />
+                <div class="dot-name">Шаурма</div>
+              </div>
+              <div class="intro__slider-dot">
+                <img src="img/dot3.png" alt="Фахитос" />
+                <div class="dot-name">Фахитос</div>
               </div>
             </div>
-          </section>
-    </main>
-    <footer class="footer" id="contacts">
-        <div class="form__contact">
-          <h2 class="title">Контакты</h2>
-          <a  href="tel:+79885355771" class=" a form__contact-number">
-            +7 988 535-57-71
-          </a>
-          <div class="form__contact-time">
-            Режим работы:<br>
-            С <span>09:00</span> до <span>20:30</span><br>
-            без выходных
+            <button class="btn" type="button">
+              <a href="#menu">Перейти к меню</a>
+            </button>
           </div>
-          <div class="form__contact-address">
-            г. Ростов-на-Дону,<br>
-            пл. Карла Маркса 17/1
+       
+        </div>
+           <div class="intro__slider">
+            <div
+              class="intro__slider-img"
+              style="background-image: url(img/intro_slider1.jpg)"
+            ></div>
+            <div
+              class="intro__slider-img"
+              style="background-image: url(img/intro_slider2.jpg)"
+            ></div>
+            <div
+              class="intro__slider-img"
+              style="background-image: url(img/intro_slider3.jpg)"
+            ></div>
           </div>
-          <div class="form__contact-links">
+      </section>
+      <section class="about">
+        <div class="container about__container">
+      
+            <div class="about__video">
+              <video
+                class="about__video"
+                poster="img/photo-video.jpg"
+                id="video"
+                src="video/video.mov"
+                controls
+              ></video>
+            </div>
+            <div class="about__content">
+              <h2 class="title">Посмотри как мы готовим</h2>
+              <div class="about-text">
+                <p>
+                  Курица и говядина – основной ингредиент блюда, а покупаем мы
+                  мясо только у проверенных и сертифицированных поставщиков.
+                </p>
+                <p>
+                  Свежее и качественное мясо наши повара готовят по особой
+                  технологии, чтобы вы чувствовали вкус и аромат настоящей
+                  шаурмы. Никогда мы не готовим шаурму из мяса, которое осталось
+                  на второй день.
+                </p>
+                <p>
+                  Хрустящие овощи и зелень – отличные составляющие вкусной и
+                  правильной шаурмы. Ароматные и сочные, они формируют
+                  сбалансированный вкус продукта, а также являются прекрасным
+                  поставщиком витаминов для нашего организма.
+                </p>
+              </div>
+              <h3 class="about__popular-title">Самые популярные блюда</h3>
+              <div class="popular">
+                <figure>
+                  <img src="img/popular1.jpg" alt="" />
+                  <figcaption>Шаурма большая куриная</figcaption>
+                </figure>
+                <figure>
+                  <img src="img/popular2.jpg" alt="" />
+                  <figcaption>Гамбургер куриный</figcaption>
+                </figure>
+                <figure>
+                  <img src="img/popular3.jpg" alt="" />
+                  <figcaption>Фахитос куриный в лаваше</figcaption>
+                </figure>
+              </div>
+            </div>
+        
+        </div>
+      </section>
+      <div class="working">
+        <div class="working__overlay">
+          <div class="container working__container">
+            <span>Яндекс.Еда</span>
+            <h2>Мы работаем</h2>
+            <span>Delivery Club</span>
           </div>
         </div>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A75d85776e18891759bce34d152350877092af0f78b4a07e06aa94e48d689660d&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=false"></script>
-      </footer>
+      </div>
+      <div id="menu" class="menu">
+        <div class="container menu__container">
+          <div class="menu__left">
+            <ul class="menu__cats">
+              <li class="menu__item">
+                <a href="#popular">Популярные блюда</a>
+              </li>
+              <li class="menu__item">
+                <a href="#streetfood">Стритфуд</a>
+              </li>
+              <li class="menu__item">
+                <a href="#snacks">Закуски</a>
+              </li>
+              <li class="menu__item">
+                <a href="#drinks">Напитки</a>
+              </li>
+              <li class="menu__item">
+                <a href="#sause">Соусы</a>
+              </li>
+              <li class="menu__item btn__order">
+                <a href="#yandex">Заказать доставку</a>
+              </li>
+            </ul>
+            <div class="popular__container">
+              <h2 id="popular">Популярные блюда</h2>
+              <div class="menu__items">
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Шаурма большая куриная</h3>
+                      <span class="item__weight">500 г</span>
+                    </div>
+                    <span class="item__price">280 ₽</span>
+                  </div>
+                  <p>
+                    Лаваш, капуста, морковка по-корейски, огурец, помидор, лук,
+                    соус чесночный, соус томатный, курица
+                  </p>
+                  <img src="img/shaurma.jpg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Картофель фри</h3>
+                      <span class="item__weight">125 г</span>
+                    </div>
+                    <span class="item__price">140 ₽</span>
+                  </div>
+                  <p></p>
+                  <img src="img/fri.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Шаурма маленькая куриная</h3>
+                      <span class="item__weight">300 г</span>
+                    </div>
+                    <span class="item__price">240 ₽</span>
+                  </div>
+                  <p>
+                    Лаваш, капуста, морковка по-корейски, огурец, помидор, лук,
+                    соус чесночный, соус томатный, курица
+                  </p>
+                  <img src="img/lowshaurma.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Фахитос куриный в булке</h3>
+                      <span class="item__weight">400 г</span>
+                    </div>
+                    <span class="item__price">300 ₽</span>
+                  </div>
+                  <p>
+                    Булочка с кунжутом, маслины, оливки, кукуруза, курица,
+                    чесночный соус
+                  </p>
+                  <img src="img/faxitos.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Хот-дог в лаваше Xxl</h3>
+                      <span class="item__weight">400 г</span>
+                    </div>
+                    <span class="item__price">170 ₽</span>
+                  </div>
+                  <p>
+                    Лаваш, капуста, морковка по-корейски, огурец, помидор, лук,
+                    соус чесночный, соус томатный, сосиски (2 шт.)
+                  </p>
+                  <img src="img/hotdog.jpeg" alt="" />
+                </article>
+              </div>
+            </div>
+            <div class="streetfood_container">
+              <h2 id="streetfood">Стритфуд</h2>
+              <div class="menu__items">
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Шаурма большая куриная</h3>
+                      <span class="item__weight">500 г</span>
+                    </div>
+                    <span class="item__price">280 ₽</span>
+                  </div>
+                  <p>
+                    Лаваш, капуста, морковка по-корейски, огурец, помидор, лук,
+                    соус чесночный, соус томатный, курица
+                  </p>
+                  <img src="img/shaurma.jpg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Шаурма маленькая куриная</h3>
+                      <span class="item__weight">500 г</span>
+                    </div>
+                    <span class="item__price">280 ₽</span>
+                  </div>
+                  <p>
+                    Лаваш, капуста, морковка по-корейски, огурец, помидор, лук,
+                    соус чесночный, соус томатный, курица
+                  </p>
+                  <img src="img/lowshaurma.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Хот-дог в лаваше Xxl</h3>
+                      <span class="item__weight">400 г</span>
+                    </div>
+                    <span class="item__price">170 ₽</span>
+                  </div>
+                  <p>
+                    Лаваш, капуста, морковка по-корейски, огурец, помидор, лук,
+                    соус чесночный, соус томатный, сосиски (2 шт.)
+                  </p>
+                  <img src="img/hotdog.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Гамбургер свиной</h3>
+                      <span class="item__weight">500 г</span>
+                    </div>
+                    <span class="item__price">300 ₽</span>
+                  </div>
+                  <p>
+                    Булочка с кунжутом, помидор, солёный огурец, лук, лист
+                    салата, свиная котлета, чесночный соус, томатный соус
+                  </p>
+                  <img src="img/hamburger.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Фахитос куриная в лаваше</h3>
+                      <span class="item__weight">500 г</span>
+                    </div>
+                    <span class="item__price">280 ₽</span>
+                  </div>
+                  <p>
+                    Лаваш, маслины, оливки, кукуруза, курица, чесночный соус
+                  </p>
+                  <img src="img/faxitosvlavashe.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Фахитос куриный в булке</h3>
+                      <span class="item__weight">400 г</span>
+                    </div>
+                    <span class="item__price">300 ₽</span>
+                  </div>
+                  <p>
+                    Булочка с кунжутом, маслины, оливки, кукуруза, курица,
+                    чесночный соус
+                  </p>
+                  <img src="img/faxitos.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Гиро</h3>
+                      <span class="item__weight">450 г</span>
+                    </div>
+                    <span class="item__price">280 ₽</span>
+                  </div>
+                  <p>Пита, помидор, чесночный соус, курица</p>
+                  <img src="img/giro.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Шаурма в тортилье куриная</h3>
+                      <span class="item__weight">400 г</span>
+                    </div>
+                    <span class="item__price">280 ₽</span>
+                  </div>
+                  <p>
+                    Тортилья со вкусом сыра, капуста, морковка по- корейски,
+                    огурец, помидор, лук, соус чесночный, соус томатный, курица
+                  </p>
+                  <img src="img/tortilia.jpeg" alt="" />
+                </article>
+              </div>
+            </div>
+            <div class="snack__container">
+              <h2 id="snacks">Закуски</h2>
+              <div class="menu__items">
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Картофель фри</h3>
+                      <span class="item__weight">125 г</span>
+                    </div>
+                    <span class="item__price">140 ₽</span>
+                  </div>
+                  <img src="img/fri.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Наггетсы</h3>
+                      <span class="item__weight">120 г</span>
+                    </div>
+                    <span class="item__price">160 ₽</span>
+                  </div>
+                  <p>(6 шт.)</p>
+                  <img src="img/naggets.jpeg" alt="" />
+                </article>
+              </div>
+            </div>
+            <div class="drinks_container">
+              <h2 id="drinks">Напитки</h2>
+              <div class="menu__items">
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Coca-cola</h3>
+                      <span class="item__weight">500 мл</span>
+                    </div>
+                    <span class="item__price">120 ₽</span>
+                  </div>
+                  <img src="img/coca-cola1.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Coca-cola</h3>
+                      <span class="item__weight">330 мл</span>
+                    </div>
+                    <span class="item__price">100 ₽</span>
+                  </div>
+                  <img src="img/coca-cola2.jpeg" alt="" />
+                </article>
+              </div>
+            </div>
+            <div class="sause_container">
+              <h2 id="sause">Соусы</h2>
+              <div class="menu__items">
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Сырный соус Heinz</h3>
+                      <span class="item__weight">25 г</span>
+                    </div>
+                    <span class="item__price">30 ₽</span>
+                  </div>
+                  <img src="img/cheese.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Кисло-сладкий соус Heinz</h3>
+                      <span class="item__weight">25 г</span>
+                    </div>
+                    <span class="item__price">30 ₽</span>
+                  </div>
+                  <img src="img/red.jpeg" alt="" />
+                </article>
+                <article class="item">
+                  <div class="item__header">
+                    <div>
+                      <h3>Карри соус Heinz</h3>
+                      <span class="item__weight">25 г</span>
+                    </div>
+                    <span class="item__price">30 ₽</span>
+                  </div>
+                  <img src="img/karri.jpeg" alt="" />
+                </article>
+              </div>
+            </div>
+            <div id="yandex" class="yandex">
+              <img src="img/yandex.svg" alt="" />
+              <h2>Закажите доставку на дом</h2>
+              <button class="btn__order" type="button">
+                <a
+                  class="btn__order-yandex"
+                  href="https://eda.yandex.ru/rostov-on-don/r/carskaya_shaurma"
+                  target="_blank"
+                  >Перейти к меню</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        class="reviews"
+        id="reviews"
+        style="background-image: url(img/reviews.jpg)"
+      >
+        <div class="container">
+          <h2 class="title">Что говорят клиенты о нас</h2>
+          <div class="reviews__slider">
+            <div class="review__slider-slide">
+              <div class="review__slider-name">Андрей Сергеев</div>
+              <p class="review__text">
+                Оооочень вкусная шаурма и особенно гамбургер рекомендую. Всегда
+                здесь кушаю теперь. Персонал всегда приветлив, чисто и уютно.
+                Можно даже заказать доставку.
+              </p>
+            </div>
+            <div class="review__slider-slide">
+              <div class="review__slider-name">Костя Стажёр</div>
+              <p class="review__text">
+                Как шаурминый амбасадор, заявляю ,что шаурма в данном заведении
+                на очень хорошем уровне,пробовал пока только куриную, но в
+                следующий раз попробую свининую, пока в ростове она точно на
+                высоком уровне. Внутри чисто, персонал приветлив,хорошая
+                вытяжка, посторонних запахов нет ) одной шаурмой можно объесться
+                )всё культурно , как в лучших домах Лондона)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="form__contact">
+        <h2 class="title">Контакты</h2>
+        <a href="tel:+79885355771" class="a form__contact-number">
+          +7 988 535-57-71
+        </a>
+        <div class="form__contact-time">
+          Режим работы:<br />
+          С <span>09:00</span> до <span>20:30</span><br />
+          без выходных
+        </div>
+        <div class="form__contact-address">
+          г. Ростов-на-Дону,<br />
+          пл. Карла Маркса 17/1
+        </div>
+        <div class="form__contact-links"></div>
+      </div>
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A75d85776e18891759bce34d152350877092af0f78b4a07e06aa94e48d689660d&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=false"
+      ></script>
+    </footer>
     <script src="libs/slick/jquery.3.6.0.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="js/function.js"></script>
-</body>
-
+  </body>
 </html>
-
